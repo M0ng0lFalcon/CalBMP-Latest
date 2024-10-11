@@ -1,0 +1,24 @@
+# flodel
+bmp
+baseline
+.idea
+# przm5 file type
+*.zts
+*.inp
+*.wea
+*.PRN
+*.54
+*.exe
+przm5place
+
+# vfsm file type
+*.igr
+*.ikw
+inputs
+output
+
+main
+
+!vfsm.exe
+!uh.exe
+!PRZM5.exe

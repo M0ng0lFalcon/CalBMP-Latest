@@ -1,0 +1,60 @@
+***Record 5 Day, Month, Year, C, n, CN
+{getRecord5}
+***Record 6: Number of crop periods that follow
+{getRecord6}
+***Record 7: Emergence (d/m/y), Maturity (d/m/y), Harvest (d/m/y), depth (cm), cover, height(cm), holdup (cm), post-harvest disposition
+{getRecord7}
+***Record 8: irrflag, tempflag
+{getRecord8}
+***Record 9
+{getRecord9}
+***Record 14: Number of horizons
+{getRecord14}
+*** Record 15
+*** #,thk, Del, Dsp,   bd,  W0,    FC,    WP,    oc, snd, cly,  tmp
+{getRecord15}
+*** Record 16, New Runoff Extraction Parameters: rDepth, rDecline, Bypass
+{getRecord16}
+*** Record 17: New Erosion Extraction Parameters: eDepth, eDecline, eEfficiency
+{getRecord17}
+************ START OF CHEMICAL INPUTS ***************************
+***Record C1  Number of Applications, Number Of Chemicals
+{getRecordC1}
+***Record C2  dd, mm, yy, cam, dep, Rate, eff, tband, 1cam, 1Dep, 1.0Rate, 1eff, 0, 2cam, 2Dep, 2.0Rate, 2eff, 0
+{getRecordC2}
+***Record C3: UPTKF (uptake factors)
+{getRecordC3}
+{getRecordC4}
+{getRecordC5}
+***Record C6: volatilization
+{getRecordC6}
+*** Record C7: Kf1, Kf2, Kf3 for each horizon
+{getRecordC7}
+*** Record C7A: N1, N2, N3 Freundlich Exponents for each horizon
+{getRecordC7A}
+*** Record C7B: Region 2 Freundlich Coefficient for each horizon
+{getRecordC7B}
+*** Record C7C: Region 2 Freundlich Exponents for each horizon
+{getRecordC7C}
+*** Record C7D: Lowest Concentration (mg/L) for Freundlich Exponent
+{getRecordC7D}
+*** Record C7E: Sorbed-Phase-Referenced Mass-Transfer Coefficient
+{getRecordC7E}
+*** Record C8: Degradation Rates Aqueous, Sorbed, Gas
+{getRecordC8}
+*** Record C9: Molar Conversions 1 to 2, 1 to 3, 2 to 3
+{getRecordC9}
+********** OUTPUT SPECIFICATIONS ***********************
+*** Record U1 （number of times series plots, which means the number of variables you want to show in the output files)
+{getRecordU1}
+*** Record U2 (Water and sediment flux: RUNF, runoff depth,cm/day； ESLS， event soil loss, Tons/day; Pesticide Loads: RFLX, pestcide runoff flux, g/cm2 day； EFLX, pesticide erosion flux, g/cm2 day; FPVL, Pesticide volatilization from foliar, g/cm2; VFLX， Pesticide volatilization from soil, g/cm2 day; Pestcide concentration: DCON, Dissolved soil concentration, mg/l； ACON, adsorbed soil concentration, mg/kg; GCON, Gas soil concentration, mg/l; TCON, Total pesticide concentration in soil, mg/kg; )
+RUNF,0,TSER,   0,  0,  1.0
+PRCP,0,TSER,   0,  0,  1.0
+IRRG,0,TSER,   0,  0,  1.0
+ESLS,0,TSER,   0,  0,  1.0
+FPST,1,TSER,   1,  1,  100000
+TPAP,1,TSER,   1,   1,   1
+DCON,1,TSER,   0,  0,   1
+ACON,1,TSER,   0,  0,   1
+GCON,1,TSER,   0,  0,   1
+{getRecordU2}

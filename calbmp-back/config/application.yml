@@ -1,0 +1,12 @@
+server:
+  port: 8081
+datasource:
+  host: 127.0.0.1
+  user: postgres
+  password: root
+  dbname: calbmp
+  port: 5432
+  sslMode: disable
+  TimeZone: Asia/Shanghai
+wine:
+  launcher: "wine"

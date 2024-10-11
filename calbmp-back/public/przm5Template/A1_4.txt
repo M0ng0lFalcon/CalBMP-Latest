@@ -1,0 +1,16 @@
+{getCurrentTime}
+***  PRZM5 Input File Generator
+***Record A1: Weather File
+{getRecordA1}
+***Record A2: PRZM5 Time Series Output File
+{getRecordA2}
+***Record A3: PRZM5 Advanced Options
+{getRecordA3}
+***Record 1: pfac, sfac, anetd
+{getRecord1}
+***Record 2: Erosion Flag 4 = MUSS, 3= MUST, 1= MUSLE
+{getRecord2}
+***Record 3: uslek, uslels, uslep, FieldSize, ireg, slope, hydraul length
+{getRecord3}
+***Record 4 Number of hydro-event changes
+{getRecord4}
